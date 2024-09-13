@@ -8,9 +8,13 @@ int main()
     cout  << "Before Swapping" << endl;  
     cout << "a = " << a << ", b = " << b << endl;
     
-    int temp = a;
-    a = b;
-    b = temp;
+    // int temp = a;
+    // a = b;
+    // b = temp;
+    // using Xor (^) method
+    a = a^b;
+    b = a^b;
+    a = a^b;
     
     cout << "After Swapping" << endl;
     cout << "a = " << a << ", b = " << b << endl;
