@@ -12,9 +12,13 @@ int main()
     // a = b;
     // b = temp;
     // using Xor (^) method
-    a = a^b;
-    b = a^b;
-    a = a^b;
+
+    // a = a^b;
+    // b = a^b;
+    // a = a^b;
+
+    // using inbuild function
+    swap(a, b);
     
     cout << "After Swapping" << endl;
     cout << "a = " << a << ", b = " << b << endl;
